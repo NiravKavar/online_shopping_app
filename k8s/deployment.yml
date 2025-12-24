@@ -26,4 +26,12 @@ spec:
         image: niravkavar/online_shop_app:latest
         ports:
           - containerPort: 80
+        resources:
+          requests:
+            cpu: 100m
+            memory: 256Mi
+
+          limits:
+            cpu: 200m
+            memory: 512Mi
 
